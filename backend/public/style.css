@@ -1,0 +1,80 @@
+:root {
+  --col-light: rgba(255, 255, 255, 0.627);
+  --col-dark: #000;
+  --col-accent: #65656537;
+  --col-accent2: #00cde4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--col-dark);
+  color: var(--col-light);
+}
+
+.app-container {
+  margin: 20px 20px 0 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.collection {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: wrap;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  padding: 1rem;
+  min-height: 100vh;
+  grid-template-columns: repeat(auto-fit, 200px);
+  column-gap: 8px;
+  row-gap: 8px;
+  justify-content: center;
+}
+
+.one-film {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: min-content;
+  padding: 10px 0 0 0;
+  background-color: var(--col-accent);
+  margin: 3px;
+}
+
+.title {
+  color: var(--col-light);
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+
+.movie-wrapper {
+  width: 500px;
+  border: 1px solid black;
+  background-color: beige;
+}
